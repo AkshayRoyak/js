@@ -57,3 +57,24 @@ age=34;
 
 jab interpreter line by line execute karega to wo khud he type assign kar dega
 */
+
+
+
+// stack(primitive) , Heap(non- primitive)
+
+// let myName = "Akshay"
+// let anotherName = myName
+// anotherName="Don"
+// console.log(myName)
+// console.log(anotherName) 
+
+//heap
+let user1={
+    email:"abc@gamil.com",
+    upi:"user1@ybl"
+}
+let user2=user1
+console.log(user1)
+user2.email="xyz@gmail.com"
+console.log(user1)
+console.table(user2)
