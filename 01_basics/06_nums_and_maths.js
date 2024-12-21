@@ -30,3 +30,28 @@
 
 // ++++++++++++++  MATHS +++++++++
 
+//console.log(Math)     // object
+
+// console.log(Math.abs(-4))
+// console.log(Math.sqrt(4))
+// console.log(Math.round(4.2))
+// console.log(Math.ceil(4.2))
+// console.log(Math.floor(4.9))
+// console.log(Math.pow(5,2))
+// console.log(Math.min(3,5,2,5,2,5,7)
+// )
+// console.log(Math.max(3,5,2,5,2,5,7)
+// )
+
+
+
+// console.log(Math.random())  // values between (0 and 1)
+// console.log((Math.random()*10)+1) // +1 to remove 0 in output 
+// console.log(Math.floor(Math.random()*10)+1) // round-off to lowest value Math.floor
+
+
+
+const min = 10
+const max = 20
+
+console.log(Math.floor(Math.random() * (max - min +1))+min)
