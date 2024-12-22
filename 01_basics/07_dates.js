@@ -19,8 +19,20 @@
 // console.log(myCreatedDate.toDateString())
 
 
-let myCreatedDate = new Date("2024-12-21")
-let myTimeStamp = Date.now()
-console.log(myTimeStamp)
-console.log(myCreatedDate.getTime())
-console.log(Date.now()/1000)
+// let myCreatedDate = new Date("2024-12-21")
+// let myTimeStamp = Date.now()
+// console.log(myTimeStamp)  // in milli seconds
+// console.log(myCreatedDate.getTime())
+// console.log(Math.floor(Date.now()/1000))  // in seconds
+
+ let newDates = new Date()
+// console.log(newDates.getDate())
+// console.log(newDates.getDay())
+// console.log(newDates.getFullYear())
+// console.log(newDates.getMinutes())
+// console.log(newDates.getMonth()+1)
+
+newDates.toLocaleString('defualt',{
+    weekday: "long",
+    timeZone:'timeZone'
+})
