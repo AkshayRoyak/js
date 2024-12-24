@@ -38,9 +38,23 @@ const jsUser = {
 // console.log(typeof jsUser[mySym1])
 
 jsUser.email="xyz@gmail.com"
-console.log(jsUser)
+//console.log(jsUser)
 
-Object.freeze(jsUser)
+//Object.freeze(jsUser)
 
-jsUser.name="Ak Roy"
-console.log(jsUser)
+//jsUser.name="Ak Roy"
+//console.log(jsUser)
+
+
+jsUser.greeting = function(){
+    console.log("Hello Js User");
+}
+
+//console.log(jsUser.greeting);   // [Function(anonymous)]
+//console.log(jsUser.greeting());  //error not a function
+
+jsUser.greeting2 = function(){
+    console.log(`Hello Js User , ${this.name}`)
+}
+console.log(jsUser.greeting2)
+console.log(jsUser.greeting2())
