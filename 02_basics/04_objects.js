@@ -78,12 +78,50 @@ const users = [
     }
 ]
 //console.log(users[1]);
-console.log(users[1].email);
-console.log(tinderUser);
-console.log(Object.keys(tinderUser))  // data type : Array
-console.log(Object.values(tinderUser))
+// console.log(users[1].email);
+// console.log(tinderUser);
+// console.log(Object.keys(tinderUser))  // data type : Array
+// console.log(Object.values(tinderUser))
 
-console.log(Object.entries(tinderUser)) // all each key values are converted into array 
+// console.log(Object.entries(tinderUser)) // all each key values are converted into array 
 
-console.log(tinderUser.hasOwnProperty('isLoggin'));  // false
+// console.log(tinderUser.hasOwnProperty('isLoggin'));  // false
+
+
+
+// lecture 18
+
+const course = {
+    courseName : "Js",
+    price : "999",
+    courseInstructor : "Hitesh"
+}
+
+//console.log(course.courseName);
+//console.log(course["courseName"]);
+
+          // De-structure
+
+// const {courseName}=course
+// console.log(courseName)
+//             // OR
+// const {courseName: instructor}=course
+// console.log(instructor)
+
+
+// in react
+
+// const navbar =(company)=>{
+
+// }
+// navbar(company ="akshay")
+
+
+//JSON
+
+// {
+//     "name" : "akshay",
+//     "corseName" : "JavaScrit",
+//     "price" : "free"
+// }
 
