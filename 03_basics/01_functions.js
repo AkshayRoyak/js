@@ -44,3 +44,36 @@ function loginUserMessage(userName="sam"){  // giving username = "sam" as defult
 //console.log(loginUserMessage("Akshay"))
 //console.log(loginUserMessage(""))
 //console.log(loginUserMessage())  // undefined if value is not passed
+
+
+function calculatePrice(num1){
+    return num1
+}
+//console.log(calculatePrice(2))      // 2
+//console.log(calculatePrice(2,200))  // 2
+
+
+function calculatePrice1(...num2){
+    return num2
+}
+//console.log(calculatePrice1(2))      // [2]
+//console.log(calculatePrice1(2,200,400))  // [2,200,400] gives an array using rest operator i.e,(...num2)
+
+
+// how objects is passed into functons and how it is used
+const user1 ={
+    username:"Akshay",
+    age:20
+}
+function handleObjects(anyObject){
+   // console.log(`Username is ${anyObject.username} and age is ${anyObject.age}`);
+    
+}
+handleObjects(user1)
+
+
+const myNewArray = [200,400,100,600]
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+console.log(returnSecondValue(myNewArray))
