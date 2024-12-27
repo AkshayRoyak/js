@@ -19,6 +19,45 @@ if(true){
 let k=100
 if(true){
     let k= 900
-    console.log("Inner :",k)   // block scope
+    //console.log("Inner :",k)   // block scope
 }
-console.log("Outer :",k)   // global scope
+//console.log("Outer :",k)   // global scope
+
+
+
+// Nested Scope
+
+function one(){
+    const userName = "Akshay"
+    function two(){
+        const website = "Youtube"
+        console.log(userName); 
+    }
+    //console.log(website);   // gives an error that website is not defined
+    two()
+}
+//one()
+
+
+if (true) {
+    const username = "Akshay"
+    if (username === "Akshay") {
+        const website =" Youtube"
+        //console.log(username + website)
+    }
+    //console.log(website)   // error
+}
+//console.log(username);    // error
+
+
+
+// +++++++++++++ INTERESTING ++++++++++++
+console.log(addOne(5))   // 6 (no error)
+function addOne(num){
+    return num + 1
+}
+
+console.log(addTwo(4))  // error since it is stored in variable
+const addTwo = function(num){
+    return num + 2
+}
